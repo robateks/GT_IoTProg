@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-language" content="en-us">
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        web of Things
+    </title>
+    <link rel="stylesheet" href="css/mystyles.css">
+
+</head>
+
+<body>
+    <h1 id="page-title">
+        Welcome to IoT Prog
+    </h1>
+    <div>
+        <form id="loginFrm" name="loginFrm" action="pages/homeIoT.html" method="POST">
+            <label>Username:</label>
+            <input id="tfun" type="text" name="username" autocomplete="off">
+            <label>Password:</label>
+            <input id="tfpass" type="password" name="password" autocomplete="off">
+            <br>
+            <input type="button" value="Submit" onclick="LoginSubmit()">
+            <input type="button" value="Cancel" onclick="ClearLogin()">
+        </form>
+    </div>
+
+    <script>
+        function LoginSubmit(){
+            let un=document.getElementById("tfun").value;
+            let pass=document.getElementById("tfpass").value;
+            console.log("username: "+un);
+            console.log("pass: "+pass);
+            if ((un=="")||(pass==""))
+                alert("please fill in the username and password!");
+            else
+                document.getElementById("loginFrm").submit();
+        }
+        function ClearLogin(){
+            document.getElementById("tfun").value="";
+            document.getElementById("tfpass").value="";
+        }
+
+        
+    </script>
+</body>
+
+</html>

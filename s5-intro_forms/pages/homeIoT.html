@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-language" content="en-us">
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Home IoT
+    </title>
+    <link rel="stylesheet" href="../css/mystyles.css">
+</head>
+
+<body>
+    <h1 id="page-title">
+        My Home Controls
+    </h1>
+    <div class="my-forms">
+        <form name="RoomControl" method="GET" action="page1.html">
+            <label>Room Name: </label>
+            <input type="text" name="roomName"/>
+            <br>
+            Door:
+            <input type="radio" name="door" value="o" id="rb-door-open"/><label for="rb-door-open">Open</label>
+            <input type="radio" name="door" value="c" id="rb-door-close"/><label for="rb-door-close">Close</label>
+            <br>
+            <label for="select-heater-time">Turn on Heater</label>
+            <select id="select-heater-time">
+                <option val="0">Keep Off</option>
+                <option val="-1">Keep ON</option>
+                <option val="15">15 min</option>
+                <option val="39">30 min</option>
+                <option val="45">45 min</option>
+                <option val="60">60 min</option>
+            </select>
+            <br>
+            <input type="checkbox" id="light1" name="light1"/>
+            <label for="light1">light 1</label>
+            <input type="checkbox" id="light2" name="light2"/>
+            <label for="light2">light 2</label>
+            <br>
+            <input type="submit" value="Submit">
+            <input type="button" value="Cancel">
+        </form>
+    </div>
+</body>
+
+</html>
